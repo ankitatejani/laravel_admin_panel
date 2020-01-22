@@ -3,7 +3,11 @@
         Options -MultiViews -Indexes
     </IfModule>
 
-    RewriteEngine On
+     Options +FollowSymLinks -Indexes
+     RewriteEngine On
+
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -12,7 +16,7 @@
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    RewriteRule ^ index.php [L]
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
