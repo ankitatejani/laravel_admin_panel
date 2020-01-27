@@ -1,7 +1,7 @@
 
    
    <div >
-        <p align="left"><img src="https://mobiosolutions.com/wp-content/uploads/2017/11/mobio-logo.png" ></p>
+        <p align="center"><img src="https://mobiosolutions.com/wp-content/uploads/2017/11/mobio-logo.png" ></p>
     </div>
 
 
