@@ -9,7 +9,7 @@
 
 
 **Command list**
-<br/><br/>Run below command in your project derectory 
+<br/><br/>Run below command in your project directory 
 
 <br/>`cp .env.example .env`
 <br/>`composer install`
