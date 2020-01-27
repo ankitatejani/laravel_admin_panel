@@ -9,6 +9,7 @@
 
 
 **Command list**
+Run below command in your project derectory 
 
 <br/>`cp .env.example .env`
 <br/>`composer install`
